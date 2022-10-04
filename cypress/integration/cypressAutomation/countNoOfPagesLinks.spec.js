@@ -27,7 +27,7 @@
 // })
 
 describe("counting no. of links and Pages", () => {
-    it.only('verify the no. of links ', () => {
+    it('verify the no. of links ', () => {
         cy.visit("https://www.google.co.in/webhp?hl=en&sa=X&ved=0ahUKEwi5pMfR9Zv4AhWHNZQKHa7YCuk4ChA8CAg")
         //  cy.get('.gLFyf').type('Cypress{enter}')
         //    let a=[]
@@ -45,7 +45,7 @@ describe("counting no. of links and Pages", () => {
         })
 
     })
-    it('verify the no. of pages', () => {
+    it.only('verify the no. of pages', () => {
         cy.visit("https://www.google.co.in/webhp?hl=en&sa=X&ved=0ahUKEwi5pMfR9Zv4AhWHNZQKHa7YCuk4ChA8CAg")
         //  cy.get('.gLFyf').type('Cypress{enter}')
         cy.get(".gLFyf.gsfi").type('Cypress{enter}')

@@ -31,7 +31,14 @@ describe('verify the function if iframe', function () {
             cy.get('@iframebody').find('.active').find('a').should('contain','Home')
         })
     })
+   
+    
 })
+// cy.get('#iframe').then((el)=>{
+//     cy.wrap(el['0'].contentDocument.body).as('body')
+//     cy.wrap(el.contents().find('body'))
+//     cy.get('@body').find('body')
+// })
 
 // it.only('verify the iframe with jquery', () => {
 //     cy.visit('https://webdriveruniversity.com/IFrame/index.html')

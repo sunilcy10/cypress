@@ -17,6 +17,7 @@ describe('validate the login functionality',function(){
         cy.get('input[id="ap_email"]').type('8806486190')
         cy.get('input[id="continue"]').click()
         cy.get('input[id="ap_password"]').type('9112967373')
+        cy.debug()
         cy.get('input[id="signInSubmit"]').click()
         cy.get('h4[class="a-alert-heading"]').should('be.visible')  ///this also a asssersion 
 

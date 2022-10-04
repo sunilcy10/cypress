@@ -33,9 +33,13 @@ describe('verify the actions in cypress',()=>{
         cy.contains('Hover Over Me First!').trigger('mouseover',{force:true})
         cy.contains('Link 1').click({force:true})
     })
-    it.only('verify the checkbox',()=>{
+    it('verify the checkbox',()=>{
         cy.visit('https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html')
         cy.get('input[value="option-2"]').click().should('be.checked')
+    })
+    it.only('verify the checkbox',()=>{
+        cy.visit('https://www.google.com/search?q=cypress&sxsrf=ALiCzsbpez-lasi7qX_fwrjuCDAuvnvvrQ:1664289508983&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjY2_HHmbX6AhVa6jgGHVRfAHgQ_AUoAXoECAEQAw&biw=1920&bih=969&dpr=1#imgrc=T5_Oeyvxiw8gGM')
+        cy.get('.n3VNCb.KAlRDb').click('bottomLeft',{force:true})
     })
 })
 

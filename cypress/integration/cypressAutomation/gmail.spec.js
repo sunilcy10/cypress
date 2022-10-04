@@ -4,11 +4,12 @@ describe('gmail', () => {
         cy.get('identifierId').type('sunilcy10@gmail.com')
         cy.contains('Next').click()
         cy.get('input[type="password"]').type('Su^il10@')
+        // cy.debug()
         cy.contains('Next').click().then(() => {
             cy.get('img[class="gb_xc"]').should('be.visible')
-        }).catch(() => {
-            cy.get('div[jsname="B34EJ"]').first().should('contain','Wrong password. Try again or click Forgot password to reset it.')
-        })
+        })//.catch(() => {
+        //     cy.get('div[jsname="B34EJ"]').first().should('contain','Wrong password. Try again or click Forgot password to reset it.')
+        // })
     })
 })
 

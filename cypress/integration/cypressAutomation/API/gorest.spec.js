@@ -30,7 +30,7 @@ describe('verify the API on gorest', () => {
             })
         })
     })
-    it('verify the create API user', () => {
+    it.only('verify the create API user', () => {
         cy.request({
             method: 'POST',
             url: 'https://gorest.co.in/public/v2/users',
